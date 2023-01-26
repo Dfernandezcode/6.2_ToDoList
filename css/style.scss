@@ -11,7 +11,8 @@ body {
 .title {
 	font-size: 50px;
 	color: #fff;
-	text-shadow: 5px 5px 0px rgba(240, 46, 170, 1);
+	text-shadow: 5px 5px 0px rgba(240, 46, 170, 1),
+		rgba(240, 46, 170, 0.3) 0px 10px;
 }
 
 .input-container {
@@ -19,7 +20,9 @@ body {
 	width: 500px;
 	padding: 10px;
 	height: 100px;
-	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+		rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+		rgba(240, 46, 170, 0.05) 25px 25px;
 
 	display: flex;
 	justify-content: center;
@@ -62,7 +65,9 @@ body {
 	padding: 10px;
 	margin: 20px;
 	background-color: #fff;
-	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px;
+	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+		rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+		rgba(240, 46, 170, 0.05) 25px 25px;
 
 	display: flex;
 	align-items: center;
@@ -90,6 +95,11 @@ body {
 		font-size: 18px;
 	}
 
+	&__edit:hover {
+		background-color: #8ee04a;
+		cursor: pointer;
+	}
+
 	&__delete {
 		height: 35px;
 		width: 35px;
@@ -99,5 +109,10 @@ body {
 		border: none;
 		margin: 20px;
 		font-size: 18px;
+	}
+
+	&__delete:hover {
+		background-color: #6815c4;
+		cursor: pointer;
 	}
 }
