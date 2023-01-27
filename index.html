@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
     <script src="https://kit.fontawesome.com/9e487adbaf.js" crossorigin="anonymous"></script>
     <title>To Do List</title>
 </head>
@@ -14,15 +14,20 @@
 <body>
     <h1 class="title">TO DO LIST</h1>
 
-    <div id="inputBox" class="input-container">
-        <input id="inputText" class="input-container__text" type="text">
-        <button id="inputBtn" class="input-container__btn">Add</button>
-    </div>
+    <form id="todoForm" class="input-container">
+        <input id="toDoText" class="input-container__text" placeholder="add item..." type="text">
+        <button id="inputBtn" class="input-container__btn" type="submit">Add</button>
+    </form>
 
-    <div id="taskBox" class="task-container">
-        <p class="task-container__text">Hello</p>
-        <button class="task-container__edit"><i class="fa-regular fa-pen-to-square"></i></button>
-        <button class="task-container__delete"><i class="fa-regular fa-trash-can"></i></button>
+    <div id="toDoList" class="task-container">
+        <!--
+        <div id="taskBox" class="task-container__box">
+            <span class="task-container__box--check-btn"><i class="fa-regular fa-circle"></i></span>
+            <p class="task-container__box--text">Hello</p>
+            <button class="task-container__box--edit"><i class="fa-regular fa-pen-to-square"></i></button>
+            <button class="task-container__box--delete"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    -->
     </div>
 
 </body>

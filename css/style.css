@@ -30,7 +30,7 @@ body {
   text-align: left;
   width: 350px;
   height: 40px;
-  margin: 20px;
+  margin-left: 20px;
   border: none;
   border-bottom: 2px solid lightgray;
   outline: none;
@@ -51,7 +51,7 @@ body {
   background-color: rgb(147, 19, 100);
 }
 
-.task-container {
+.task-container__box {
   height: 100px;
   width: 500px;
   padding: 10px;
@@ -62,30 +62,34 @@ body {
   align-items: center;
   justify-content: center;
 }
-.task-container__text {
+.task-container__box--check-btn {
+  margin: 20px;
+}
+.task-container__box--text {
   display: flex;
   align-items: center;
   text-align: left;
-  width: 350px;
+  width: 300px;
   height: 40px;
-  margin: 20px;
+  margin-left: 20px;
   border-bottom: 2px solid lightgray;
   font-size: 15px;
 }
-.task-container__edit {
+.task-container__box--edit {
   height: 35px;
   width: 35px;
+  margin-left: 20px;
   color: #fff;
   background-color: #bde998;
   outline: none;
   border: none;
   font-size: 18px;
 }
-.task-container__edit:hover {
+.task-container__box--edit:hover {
   background-color: #8ee04a;
   cursor: pointer;
 }
-.task-container__delete {
+.task-container__box--delete {
   height: 35px;
   width: 35px;
   color: #fff;
@@ -95,7 +99,7 @@ body {
   margin: 20px;
   font-size: 18px;
 }
-.task-container__delete:hover {
+.task-container__box--delete:hover {
   background-color: #6815c4;
   cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

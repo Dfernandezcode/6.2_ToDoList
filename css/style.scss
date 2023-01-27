@@ -35,7 +35,7 @@ body {
 
 		width: 350px;
 		height: 40px;
-		margin: 20px;
+		margin-left: 20px;
 		border: none;
 		border-bottom: 2px solid lightgray;
 		outline: none;
@@ -60,59 +60,66 @@ body {
 }
 
 .task-container {
-	height: 100px;
-	width: 500px;
-	padding: 10px;
-	margin: 20px;
-	background-color: #fff;
-	box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-		rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-		rgba(240, 46, 170, 0.05) 25px 25px;
+	&__box {
+		height: 100px;
+		width: 500px;
+		padding: 10px;
+		margin: 20px;
+		background-color: #fff;
+		box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+			rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+			rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	&__text {
 		display: flex;
 		align-items: center;
-		text-align: left;
+		justify-content: center;
 
-		width: 350px;
-		height: 40px;
-		margin: 20px;
-		border-bottom: 2px solid lightgray;
-		font-size: 15px;
-	}
+		&--check-btn {
+			margin: 20px;
+		}
 
-	&__edit {
-		height: 35px;
-		width: 35px;
-		color: #fff;
-		background-color: #bde998;
-		outline: none;
-		border: none;
-		font-size: 18px;
-	}
+		&--text {
+			display: flex;
+			align-items: center;
+			text-align: left;
 
-	&__edit:hover {
-		background-color: #8ee04a;
-		cursor: pointer;
-	}
+			width: 300px;
+			height: 40px;
+			margin-left: 20px;
+			border-bottom: 2px solid lightgray;
+			font-size: 15px;
+		}
 
-	&__delete {
-		height: 35px;
-		width: 35px;
-		color: #fff;
-		background-color: #953bfb;
-		outline: none;
-		border: none;
-		margin: 20px;
-		font-size: 18px;
-	}
+		&--edit {
+			height: 35px;
+			width: 35px;
+			margin-left: 20px;
+			color: #fff;
+			background-color: #bde998;
+			outline: none;
+			border: none;
+			font-size: 18px;
+		}
 
-	&__delete:hover {
-		background-color: #6815c4;
-		cursor: pointer;
+		&--edit:hover {
+			background-color: #8ee04a;
+			cursor: pointer;
+		}
+
+		&--delete {
+			height: 35px;
+			width: 35px;
+			color: #fff;
+			background-color: #953bfb;
+			outline: none;
+			border: none;
+			margin: 20px;
+			font-size: 18px;
+		}
+
+		&--delete:hover {
+			background-color: #6815c4;
+			cursor: pointer;
+		}
 	}
 }
