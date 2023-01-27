@@ -5,9 +5,12 @@ const toDoInput = document.getElementById('toDoText');
 const toDoListEl = document.getElementById('toDoList');
 
 // Variables
-let toDos = JSON.parse(localStorage.getItem('toDos') || [];
+let toDos = [];
 let editToDoId = -1;
-localStorage.setItem('toDos', JSON.stringigy(toDos));
+
+//1st Render
+
+renderToDos();
 
 // Form Submission
 form.addEventListener('submit', function (event) {
@@ -15,6 +18,7 @@ form.addEventListener('submit', function (event) {
 
 	saveToDo();
 	renderToDos();
+	localStorage.setItem('toDos', JSON.stringify(toDos));
 });
 
 // Save TODO function
@@ -105,19 +109,22 @@ function checkToDo(toDoId) {
 	}));
 
 	renderToDos();
+	localStorage.setItem('toDos', JSON.stringify(toDos));
 }
+
 //EDIT TODO
 
 function editToDo(toDoId) {
 	toDoInput.value = toDos[toDoId].value;
-	EditToDoId = toDoId;
+	editToDoId = toDoId;
 }
 
 //DELETE TODO
 
 function deleteToDo(toDoId) {
-	toDos.filter((toDo, index) => index !== toDoId);
-	EditToDoId = -1;
+	toDos.filter((toDos, index) => index !== toDoId);
+	editToDoId = -1;
 
 	renderToDos();
+	localStorage.setItem('toDos', JSON.stringify(toDos));
 }
